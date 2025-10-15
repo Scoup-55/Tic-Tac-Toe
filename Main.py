@@ -37,6 +37,9 @@ def play_game():
         if check_win(com):
             print("x победил!")
             break
+        if len(nums) == 0:
+            print("Ничья!")
+            break
         # Ход нолика
         o = input("Поставишь ноль? (1-9): ")
         while o not in nums:
@@ -50,6 +53,9 @@ def play_game():
         print_pool(pool)
         if check_win(com1):
             print("0 победил!")
+            break
+        if len(nums) == 0:
+            print("Ничья!")
             break
 # Запуск игры
 play_game()
