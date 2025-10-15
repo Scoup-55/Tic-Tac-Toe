@@ -13,7 +13,7 @@ def play_game():
             if a in com and b in com and c in com:
                 return True
         return False
-        def rest(res):
+    def rest(res):
         if res == 'да':
             play_game()
         else:
