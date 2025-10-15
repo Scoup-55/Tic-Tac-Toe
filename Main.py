@@ -13,8 +13,11 @@ def play_game():
             if a in com and b in com and c in com:
                 return True
         return False
-
-
+    def rest(res):
+        if res == 'да':
+            play_game()
+        else:
+            print("Спасибо за игру!")
     def print_pool(p):
         print(p)
     t = True
@@ -57,5 +60,7 @@ def play_game():
         if len(nums) == 0:
             print("Ничья!")
             break
+    # Спрашиваем, хотите ли играть снова
+    rest(input("Хотите сыграть снова? (да/нет): "))
 # Запуск игры
 play_game()
